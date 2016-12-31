@@ -111,30 +111,30 @@ kernelmajversion: '3.10'
 kernelrelease: 3.10.0-514.2.2.el7.x86_64
 kernelversion: 3.10.0
 load_averages:
-  15m: 0.05
-  1m: 0.0
-  5m: 0.02
+  15m: 0.08
+  1m: 0.02
+  5m: 0.09
 macaddress: 0a:ab:d3:d6:44:6c
 macaddress_eth0: 0a:ab:d3:d6:44:6c
 manufacturer: Xen
 memory:
   system:
-    available: 3.75 GiB
-    available_bytes: 4025978880
-    capacity: 49.25%
+    available: 3.73 GiB
+    available_bytes: 4005593088
+    capacity: 49.51%
     total: 7.39 GiB
     total_bytes: 7933206528
-    used: 3.64 GiB
-    used_bytes: 3907227648
-memoryfree: 3.75 GiB
-memoryfree_mb: 3839.47265625
+    used: 3.66 GiB
+    used_bytes: 3927613440
+memoryfree: 3.73 GiB
+memoryfree_mb: 3820.03125
 memorysize: 7.39 GiB
 memorysize_mb: 7565.6953125
 mountpoints:
   "/":
-    available: 26.45 GiB
-    available_bytes: 28395974656
-    capacity: 11.81%
+    available: 26.38 GiB
+    available_bytes: 28320366592
+    capacity: 12.04%
     device: "/dev/xvda1"
     filesystem: xfs
     options:
@@ -146,8 +146,8 @@ mountpoints:
     - noquota
     size: 29.99 GiB
     size_bytes: 32198660096
-    used: 3.54 GiB
-    used_bytes: 3802685440
+    used: 3.61 GiB
+    used_bytes: 3878293504
   "/dev/shm":
     available: 3.69 GiB
     available_bytes: 3966599168
@@ -410,14 +410,14 @@ sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC//Js4uLai8dOTyfa1tsDuk0vcZkkt8WiChzzwE
 staging_http_get: curl
 system_uptime:
   days: 0
-  hours: 3
-  seconds: 13721
-  uptime: 3:48 hours
+  hours: 4
+  seconds: 14621
+  uptime: 4:03 hours
 timezone: UTC
-uptime: 3:48 hours
+uptime: 4:03 hours
 uptime_days: 0
-uptime_hours: 3
-uptime_seconds: 13721
+uptime_hours: 4
+uptime_seconds: 14621
 uuid: EC29411B-C4EF-7983-B9AD-CB5BBF1F53CA
 virtual: xenhvm
 clientcert: ip-172-30-0-109.ec2.internal
