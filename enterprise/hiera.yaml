@@ -1,0 +1,19 @@
+#######################################################################
+# This file is managed by Puppet Enterprise during install and upgrade.
+# Do not modify.
+---
+:backends:
+  - hocon
+  - yaml
+:hierarchy:
+  - nodes/%{::trusted.certname}
+  - pe
+  - common
+:hocon:
+  :datadir: /etc/puppetlabs/enterprise/conf.d
+:yaml:
+  # datadir is empty here, so hiera uses its defaults:
+  # - /etc/puppetlabs/code/environments/%{environment}/hieradata on *nix
+  # - %CommonAppData%\PuppetLabs\code\environments\%{environment}\hieradata on Windows
+  # When specifying a datadir, make sure the directory exists.
+  :datadir:

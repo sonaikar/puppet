@@ -1,0 +1,425 @@
+---
+aio_agent_build: 1.8.2
+aio_agent_version: 1.8.2
+architecture: x86_64
+augeas:
+  version: 1.4.0
+augeasversion: 1.4.0
+bios_release_date: 12/09/2016
+bios_vendor: Xen
+bios_version: 4.2.amazon
+blockdevice_xvda_size: 32212254720
+blockdevices: xvda
+chassistype: Other
+dhcp_servers:
+  eth0: 172.30.0.1
+  system: 172.30.0.1
+disks:
+  xvda:
+    size: 30.00 GiB
+    size_bytes: 32212254720
+dmi:
+  bios:
+    release_date: 12/09/2016
+    vendor: Xen
+    version: 4.2.amazon
+  chassis:
+    type: Other
+  manufacturer: Xen
+  product:
+    name: HVM domU
+    serial_number: ec29411b-c4ef-7983-b9ad-cb5bbf1f53ca
+    uuid: EC29411B-C4EF-7983-B9AD-CB5BBF1F53CA
+domain: ec2.internal
+ec2_metadata:
+  ami-id: ami-6d1c2007
+  ami-launch-index: '0'
+  ami-manifest-path: "(unknown)"
+  block-device-mapping:
+    ami: "/dev/sda1"
+    root: "/dev/sda1"
+  hostname: ip-172-30-0-109.ec2.internal
+  instance-action: none
+  instance-id: i-0b12119d21f91e684
+  instance-type: t2.large
+  local-hostname: ip-172-30-0-109.ec2.internal
+  local-ipv4: 172.30.0.109
+  mac: 0a:ab:d3:d6:44:6c
+  metrics:
+    vhostmd: <?xml version="1.0" encoding="UTF-8"?>
+  network:
+    interfaces:
+      macs:
+        0a:ab:d3:d6:44:6c:
+          device-number: '0'
+          interface-id: eni-da888635
+          ipv4-associations:
+            34.194.183.179: 172.30.0.109
+          local-hostname: ip-172-30-0-109.ec2.internal
+          local-ipv4s: 172.30.0.109
+          mac: 0a:ab:d3:d6:44:6c
+          owner-id: '136500089464'
+          public-hostname: ''
+          public-ipv4s: 34.194.183.179
+          security-group-ids: sg-889997f2
+          security-groups: CentOS 7 -x86_64- - with Updates HVM-1602-AutogenByAWSMP-
+          subnet-id: subnet-4691140f
+          subnet-ipv4-cidr-block: 172.30.0.0/24
+          vpc-id: vpc-d65352b1
+          vpc-ipv4-cidr-block: 172.30.0.0/16
+          vpc-ipv4-cidr-blocks: 172.30.0.0/16
+  placement:
+    availability-zone: us-east-1d
+  product-codes: aw0evgkw8e5c1q413zgy5pjce
+  profile: default-hvm
+  public-hostname: ''
+  public-ipv4: 34.194.183.179
+  public-keys:
+    '0':
+      openssh-key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCLXbtDJptKqLz6x/hrD5v94g8lmmiDHaVgj1C6flR88ikzma0E0jP/oaPWECbl44Gdt0JV3j4gwh70sRnBd9KwL4SOpZgTkWLD4NlhVgtFYd7rBPa6mYz8kElPzlt77Cfus7EbKVptRg9XzlysMjtRMKB6tP+gMXSxLV51QcunfMS6n32tED0Fdihpm/OPv+WH+F0l3vMUTCdDiX6gpJfdOiGnHykVxjKBMh/zxJ+dR8rMMyr/iTanst8tkfMC6zaSyNyvQK328g2Pq3iLSGEg1vePl4hke9MDhCz3EZI4QEUPNuRnJ+AA+VJB5RSK461hHlyx2y/tcejkCvtFofRf
+        centos72
+  reservation-id: r-058b808c3c59efb8f
+  security-groups: CentOS 7 -x86_64- - with Updates HVM-1602-AutogenByAWSMP-
+  services:
+    domain: amazonaws.com
+    partition: aws
+facterversion: 3.5.0
+filesystems: iso9660,xfs
+fqdn: ip-172-30-0-109.ec2.internal
+gid: root
+hardwareisa: x86_64
+hardwaremodel: x86_64
+hostname: ip-172-30-0-109
+id: root
+identity:
+  gid: 0
+  group: root
+  privileged: true
+  uid: 0
+  user: root
+interfaces: eth0,lo
+ipaddress: 172.30.0.109
+ipaddress6: fe80::8ab:d3ff:fed6:446c
+ipaddress6_eth0: fe80::8ab:d3ff:fed6:446c
+ipaddress6_lo: "::1"
+ipaddress_eth0: 172.30.0.109
+ipaddress_lo: 127.0.0.1
+is_pe: false
+is_virtual: true
+kernel: Linux
+kernelmajversion: '3.10'
+kernelrelease: 3.10.0-514.2.2.el7.x86_64
+kernelversion: 3.10.0
+load_averages:
+  15m: 0.05
+  1m: 0.0
+  5m: 0.02
+macaddress: 0a:ab:d3:d6:44:6c
+macaddress_eth0: 0a:ab:d3:d6:44:6c
+manufacturer: Xen
+memory:
+  system:
+    available: 3.75 GiB
+    available_bytes: 4025978880
+    capacity: 49.25%
+    total: 7.39 GiB
+    total_bytes: 7933206528
+    used: 3.64 GiB
+    used_bytes: 3907227648
+memoryfree: 3.75 GiB
+memoryfree_mb: 3839.47265625
+memorysize: 7.39 GiB
+memorysize_mb: 7565.6953125
+mountpoints:
+  "/":
+    available: 26.45 GiB
+    available_bytes: 28395974656
+    capacity: 11.81%
+    device: "/dev/xvda1"
+    filesystem: xfs
+    options:
+    - rw
+    - seclabel
+    - relatime
+    - attr2
+    - inode64
+    - noquota
+    size: 29.99 GiB
+    size_bytes: 32198660096
+    used: 3.54 GiB
+    used_bytes: 3802685440
+  "/dev/shm":
+    available: 3.69 GiB
+    available_bytes: 3966599168
+    capacity: 0.00%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    size: 3.69 GiB
+    size_bytes: 3966603264
+    used: 4.00 KiB
+    used_bytes: 4096
+  "/run":
+    available: 3.67 GiB
+    available_bytes: 3941064704
+    capacity: 0.64%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    - mode=755
+    size: 3.69 GiB
+    size_bytes: 3966603264
+    used: 24.36 MiB
+    used_bytes: 25538560
+  "/run/user/0":
+    available: 756.57 MiB
+    available_bytes: 793321472
+    capacity: 0%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    - relatime
+    - size=774728k
+    - mode=700
+    size: 756.57 MiB
+    size_bytes: 793321472
+    used: 0 bytes
+    used_bytes: 0
+  "/run/user/1000":
+    available: 756.57 MiB
+    available_bytes: 793321472
+    capacity: 0%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    - relatime
+    - size=774728k
+    - mode=700
+    - uid=1000
+    - gid=1000
+    size: 756.57 MiB
+    size_bytes: 793321472
+    used: 0 bytes
+    used_bytes: 0
+  "/run/user/994":
+    available: 756.57 MiB
+    available_bytes: 793321472
+    capacity: 0%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    - relatime
+    - size=774728k
+    - mode=700
+    - uid=994
+    - gid=991
+    size: 756.57 MiB
+    size_bytes: 793321472
+    used: 0 bytes
+    used_bytes: 0
+  "/sys/fs/cgroup":
+    available: 3.69 GiB
+    available_bytes: 3966603264
+    capacity: 0%
+    device: tmpfs
+    filesystem: tmpfs
+    options:
+    - ro
+    - seclabel
+    - nosuid
+    - nodev
+    - noexec
+    - mode=755
+    size: 3.69 GiB
+    size_bytes: 3966603264
+    used: 0 bytes
+    used_bytes: 0
+mtu_eth0: 9001
+mtu_lo: 65536
+netmask: 255.255.255.0
+netmask6: 'ffff:ffff:ffff:ffff::'
+netmask6_eth0: 'ffff:ffff:ffff:ffff::'
+netmask6_lo: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+netmask_eth0: 255.255.255.0
+netmask_lo: 255.0.0.0
+network: 172.30.0.0
+network6: 'fe80::'
+network6_eth0: 'fe80::'
+network6_lo: "::1"
+network_eth0: 172.30.0.0
+network_lo: 127.0.0.0
+networking:
+  dhcp: 172.30.0.1
+  domain: ec2.internal
+  fqdn: ip-172-30-0-109.ec2.internal
+  hostname: ip-172-30-0-109
+  interfaces:
+    eth0:
+      bindings:
+      - address: 172.30.0.109
+        netmask: 255.255.255.0
+        network: 172.30.0.0
+      bindings6:
+      - address: fe80::8ab:d3ff:fed6:446c
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      dhcp: 172.30.0.1
+      ip: 172.30.0.109
+      ip6: fe80::8ab:d3ff:fed6:446c
+      mac: 0a:ab:d3:d6:44:6c
+      mtu: 9001
+      netmask: 255.255.255.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 172.30.0.0
+      network6: 'fe80::'
+    lo:
+      bindings:
+      - address: 127.0.0.1
+        netmask: 255.0.0.0
+        network: 127.0.0.0
+      bindings6:
+      - address: "::1"
+        netmask: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+        network: "::1"
+      ip: 127.0.0.1
+      ip6: "::1"
+      mtu: 65536
+      netmask: 255.0.0.0
+      netmask6: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+      network: 127.0.0.0
+      network6: "::1"
+  ip: 172.30.0.109
+  ip6: fe80::8ab:d3ff:fed6:446c
+  mac: 0a:ab:d3:d6:44:6c
+  mtu: 9001
+  netmask: 255.255.255.0
+  netmask6: 'ffff:ffff:ffff:ffff::'
+  network: 172.30.0.0
+  network6: 'fe80::'
+  primary: eth0
+operatingsystem: CentOS
+operatingsystemmajrelease: '7'
+operatingsystemrelease: 7.3.1611
+os:
+  architecture: x86_64
+  family: RedHat
+  hardware: x86_64
+  name: CentOS
+  release:
+    full: 7.3.1611
+    major: '7'
+    minor: '3'
+  selinux:
+    config_mode: enforcing
+    config_policy: targeted
+    current_mode: enforcing
+    enabled: true
+    enforced: true
+    policy_version: '28'
+osfamily: RedHat
+partitions:
+  "/dev/xvda1":
+    filesystem: xfs
+    mount: "/"
+    size: 30.00 GiB
+    size_bytes: 32209147904
+    uuid: ef6ba050-6cdc-416a-9380-c14304d0d206
+path: "/usr/bin:/bin:/usr/sbin:/sbin"
+pe_build: 2016.5.1
+pe_concat_basedir: "/opt/puppetlabs/puppet/cache/pe_concat"
+pe_razor_server_version: package pe-razor-server is not installed
+pe_server_version: 2016.5.1
+physicalprocessorcount: 1
+platform_symlink_writable: true
+platform_tag: el-7-x86_64
+processor0: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+processor1: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+processorcount: 2
+processors:
+  count: 2
+  isa: x86_64
+  models:
+  - Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+  physicalcount: 1
+productname: HVM domU
+puppet_files_dir_present: false
+puppetversion: 4.8.1
+ruby:
+  platform: x86_64-linux
+  sitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+  version: 2.1.9
+rubyplatform: x86_64-linux
+rubysitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
+rubyversion: 2.1.9
+selinux: true
+selinux_config_mode: enforcing
+selinux_config_policy: targeted
+selinux_current_mode: enforcing
+selinux_enforced: true
+selinux_policyversion: '28'
+serialnumber: ec29411b-c4ef-7983-b9ad-cb5bbf1f53ca
+ssh:
+  ecdsa:
+    fingerprints:
+      sha1: SSHFP 3 1 be2f5c92832ee64e42c7caa9fe6289d4cccb92d3
+      sha256: SSHFP 3 2 5f40d5d30bffe8b147de3c14b8e5048b2572ddeb37e239068a186fa9d704ecfc
+    key: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGj+AuGRtjOvzAFHeh03nU5UWZtiTd8g1S2q1TnVu6p6fwB8WIFBqi9EmmbcekypoO2kIx3yueupaOdvixWZuuY=
+  ed25519:
+    fingerprints:
+      sha1: SSHFP 4 1 218c7d0f2dedb0084a21799c6ac3c4f463ec023d
+      sha256: SSHFP 4 2 813a9637ee30be878bac5912f57f7306715e3dccb7625fbfc053034bdf4454e0
+    key: AAAAC3NzaC1lZDI1NTE5AAAAIO+MikvjP5/edTPPzOcTFvolo+DqpcKc6jvWEe5wmbav
+  rsa:
+    fingerprints:
+      sha1: SSHFP 1 1 9163d0cc99d52e1a685a98b8eb514d6d9b8cf2a4
+      sha256: SSHFP 1 2 9fd9276874ad6659061469a8d852b5f6b6b9fd8b1a9e662a80fc7df37a9252fe
+    key: AAAAB3NzaC1yc2EAAAADAQABAAABAQC//Js4uLai8dOTyfa1tsDuk0vcZkkt8WiChzzwEfNR9A+FXf9vwFxVgnk1SfdiMuPMfTnP4dwwwk6etGJuzAtrhDv4Zk9gPmILHxlvuUQ4viCG3K1FY2FZq6vBx9DtICin16c+f1BnmkXU0hI/Ou8hs5+L6fBLSlDpzuPmzr0Xxb1uQBbiwuYRz0o6nw7reEGO8P61qkPCkyEYiqipFLiI2m2XjCj7ILNUXvRO1ExKsiw+eoYI1MWvEMhEAh/YSmGQX86XFlCz3DE2OpgUST4TDQYNLI6Sme77Ic3LwDh2tvkxWwSEdYgLhpkuRvviIDxyvrkYSoKRLMetvS9HLOv9
+sshecdsakey: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGj+AuGRtjOvzAFHeh03nU5UWZtiTd8g1S2q1TnVu6p6fwB8WIFBqi9EmmbcekypoO2kIx3yueupaOdvixWZuuY=
+sshed25519key: AAAAC3NzaC1lZDI1NTE5AAAAIO+MikvjP5/edTPPzOcTFvolo+DqpcKc6jvWEe5wmbav
+sshfp_ecdsa: |-
+  SSHFP 3 1 be2f5c92832ee64e42c7caa9fe6289d4cccb92d3
+  SSHFP 3 2 5f40d5d30bffe8b147de3c14b8e5048b2572ddeb37e239068a186fa9d704ecfc
+sshfp_ed25519: |-
+  SSHFP 4 1 218c7d0f2dedb0084a21799c6ac3c4f463ec023d
+  SSHFP 4 2 813a9637ee30be878bac5912f57f7306715e3dccb7625fbfc053034bdf4454e0
+sshfp_rsa: |-
+  SSHFP 1 1 9163d0cc99d52e1a685a98b8eb514d6d9b8cf2a4
+  SSHFP 1 2 9fd9276874ad6659061469a8d852b5f6b6b9fd8b1a9e662a80fc7df37a9252fe
+sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC//Js4uLai8dOTyfa1tsDuk0vcZkkt8WiChzzwEfNR9A+FXf9vwFxVgnk1SfdiMuPMfTnP4dwwwk6etGJuzAtrhDv4Zk9gPmILHxlvuUQ4viCG3K1FY2FZq6vBx9DtICin16c+f1BnmkXU0hI/Ou8hs5+L6fBLSlDpzuPmzr0Xxb1uQBbiwuYRz0o6nw7reEGO8P61qkPCkyEYiqipFLiI2m2XjCj7ILNUXvRO1ExKsiw+eoYI1MWvEMhEAh/YSmGQX86XFlCz3DE2OpgUST4TDQYNLI6Sme77Ic3LwDh2tvkxWwSEdYgLhpkuRvviIDxyvrkYSoKRLMetvS9HLOv9
+staging_http_get: curl
+system_uptime:
+  days: 0
+  hours: 3
+  seconds: 13721
+  uptime: 3:48 hours
+timezone: UTC
+uptime: 3:48 hours
+uptime_days: 0
+uptime_hours: 3
+uptime_seconds: 13721
+uuid: EC29411B-C4EF-7983-B9AD-CB5BBF1F53CA
+virtual: xenhvm
+clientcert: ip-172-30-0-109.ec2.internal
+clientversion: 4.8.1
+clientnoop: false
