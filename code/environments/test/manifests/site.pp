@@ -29,3 +29,9 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+file {'/tmp/sameer': 
+	mode => '644',
+	ensure => 'file',
+	content => 'test file',
+}
