@@ -29,3 +29,10 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
+
+node 'ip-172-30-0-12.ec2.internal' {
+
+	include lamp
+
+
+}

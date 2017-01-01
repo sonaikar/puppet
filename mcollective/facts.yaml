@@ -111,30 +111,30 @@ kernelmajversion: '3.10'
 kernelrelease: 3.10.0-514.2.2.el7.x86_64
 kernelversion: 3.10.0
 load_averages:
-  15m: 0.08
-  1m: 0.02
-  5m: 0.09
+  15m: 0.05
+  1m: 0.08
+  5m: 0.04
 macaddress: 0a:ab:d3:d6:44:6c
 macaddress_eth0: 0a:ab:d3:d6:44:6c
 manufacturer: Xen
 memory:
   system:
-    available: 3.73 GiB
-    available_bytes: 4005593088
-    capacity: 49.51%
+    available: 3.12 GiB
+    available_bytes: 3345195008
+    capacity: 57.83%
     total: 7.39 GiB
     total_bytes: 7933206528
-    used: 3.66 GiB
-    used_bytes: 3927613440
-memoryfree: 3.73 GiB
-memoryfree_mb: 3820.03125
+    used: 4.27 GiB
+    used_bytes: 4588011520
+memoryfree: 3.12 GiB
+memoryfree_mb: 3190.2265625
 memorysize: 7.39 GiB
 memorysize_mb: 7565.6953125
 mountpoints:
   "/":
-    available: 26.38 GiB
-    available_bytes: 28320366592
-    capacity: 12.04%
+    available: 26.32 GiB
+    available_bytes: 28260126720
+    capacity: 12.23%
     device: "/dev/xvda1"
     filesystem: xfs
     options:
@@ -146,8 +146,8 @@ mountpoints:
     - noquota
     size: 29.99 GiB
     size_bytes: 32198660096
-    used: 3.61 GiB
-    used_bytes: 3878293504
+    used: 3.67 GiB
+    used_bytes: 3938533376
   "/dev/shm":
     available: 3.69 GiB
     available_bytes: 3966599168
@@ -256,6 +256,7 @@ mountpoints:
     used_bytes: 0
 mtu_eth0: 9001
 mtu_lo: 65536
+mysql_server_id: 56193388
 netmask: 255.255.255.0
 netmask6: 'ffff:ffff:ffff:ffff::'
 netmask6_eth0: 'ffff:ffff:ffff:ffff::'
@@ -337,6 +338,7 @@ os:
     enforced: true
     policy_version: '28'
 osfamily: RedHat
+package_provider: yum
 partitions:
   "/dev/xvda1":
     filesystem: xfs
@@ -363,8 +365,11 @@ processors:
   - Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
   physicalcount: 1
 productname: HVM domU
+puppet_environmentpath: "/etc/puppetlabs/code/environments"
 puppet_files_dir_present: false
+puppet_vardir: "/opt/puppetlabs/puppet/cache"
 puppetversion: 4.8.1
+root_home: "/root"
 ruby:
   platform: x86_64-linux
   sitedir: "/opt/puppetlabs/puppet/lib/ruby/site_ruby/2.1.0"
@@ -379,6 +384,7 @@ selinux_current_mode: enforcing
 selinux_enforced: true
 selinux_policyversion: '28'
 serialnumber: ec29411b-c4ef-7983-b9ad-cb5bbf1f53ca
+service_provider: systemd
 ssh:
   ecdsa:
     fingerprints:
@@ -410,14 +416,14 @@ sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC//Js4uLai8dOTyfa1tsDuk0vcZkkt8WiChzzwE
 staging_http_get: curl
 system_uptime:
   days: 0
-  hours: 4
-  seconds: 14621
-  uptime: 4:03 hours
+  hours: 19
+  seconds: 68623
+  uptime: 19:03 hours
 timezone: UTC
-uptime: 4:03 hours
+uptime: 19:03 hours
 uptime_days: 0
-uptime_hours: 4
-uptime_seconds: 14621
+uptime_hours: 19
+uptime_seconds: 68623
 uuid: EC29411B-C4EF-7983-B9AD-CB5BBF1F53CA
 virtual: xenhvm
 clientcert: ip-172-30-0-109.ec2.internal
