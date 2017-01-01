@@ -41,7 +41,9 @@ node 'ip-172-30-0-11.ec2.internal' {
 #		enable => 'true'
 #	}
 
-	include webserver
+	#include webserver
+	
+	include docker 
 
 }
 
