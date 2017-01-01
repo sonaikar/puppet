@@ -24,14 +24,32 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node default {
+#node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
+#}
+
+node 'ip-172-30-0-11.ec2.internal' {
+
+#	package { 'httpd':
+#		ensure => 'installed',
+#	}
+#	
+#	service { 'httpd':
+#		ensure => 'running',
+#		enable => 'true'
+#	}
+
+	include webserver
+
 }
 
-file {'/tmp/sameer': 
-	mode => '644',
-	ensure => 'file',
-	content => 'test file',
-}
+
+
+
+#file {'/tmp/sameer': 
+#	mode => '644',
+#	ensure => 'file',
+#	content => 'test file',
+#}
