@@ -22,8 +22,8 @@
 #
 define docker::image(
   $ensure    = 'present',
-  $image     = $title,
-  $image_tag = undef,
+  $image     = 'hello-world',
+  $image_tag = 'base',
   $force     = false,
   $docker_file = undef,
   $docker_dir = undef,

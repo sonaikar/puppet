@@ -1,0 +1,15 @@
+{
+  "name": "speedorelease-posgresql",
+  "version": "0.1.0",
+  "author": "speedorelease",
+  "summary": "Install and configure postgresql",
+  "license": "Apache-2.0",
+  "source": "http://github.com/sonaikar",
+  "project_page": "https://github.com/sonaikar",
+  "issues_url": "https://github.com/sonaikar/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+

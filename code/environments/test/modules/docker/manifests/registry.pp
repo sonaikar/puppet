@@ -30,9 +30,9 @@
 define docker::registry(
   $server      = $title,
   $ensure      = 'present',
-  $username    = sonaikar,
-  $password    = S@meer123,
-  $email       = sonaikar@yahoo.com,
+  $username    = 'sonaikar',
+  $password    = 'S@meer123',
+  $email       = 'sonaikar@yahoo.com',
   $local_user  = 'root',
 ) {
   include docker::params

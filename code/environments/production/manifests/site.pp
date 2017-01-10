@@ -32,7 +32,11 @@ node default {
 
 node 'ip-172-30-0-12.ec2.internal' {
 
-	include lamp
-
-
+	#include lamp
+	class { 'jenkins::slave':
+		masterurl => 'http://34.194.183.179:9000',
+		ui_user => 'admin',
+		ui_pass => 'admin123', 
+		slave_name => "{$::hostname}-slave"
+	      }
 }

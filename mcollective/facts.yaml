@@ -97,44 +97,79 @@ identity:
   privileged: true
   uid: 0
   user: root
-interfaces: eth0,lo
+interfaces: docker0,docker_gwbridge,eth0,lo,veth727c913,vethd97f587
 ipaddress: 172.30.0.109
 ipaddress6: fe80::8ab:d3ff:fed6:446c
+ipaddress6_docker0: fe80::42:9ff:fe21:5afb
+ipaddress6_docker_gwbridge: fe80::42:dff:fe50:fb22
 ipaddress6_eth0: fe80::8ab:d3ff:fed6:446c
 ipaddress6_lo: "::1"
+ipaddress6_veth727c913: fe80::40fb:72ff:feed:69fb
+ipaddress6_vethd97f587: fe80::8040:fcff:fe8c:2b4e
+ipaddress_docker0: 172.17.0.1
+ipaddress_docker_gwbridge: 172.18.0.1
 ipaddress_eth0: 172.30.0.109
 ipaddress_lo: 127.0.0.1
 is_pe: false
 is_virtual: true
+java_default_home: "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-2.b15.el7_3.x86_64"
+java_libjvm_path: "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.111-2.b15.el7_3.x86_64/jre/lib/amd64/server"
+java_major_version: '8'
+java_patch_level: '111'
+java_version: 1.8.0_111
+jenkins_plugins: ace-editor 1.1, active-directory 2.0, ant 1.4, antisamy-markup-formatter
+  1.5, bitbucket 1.1.5, bouncycastle-api 2.16.0, branch-api 1.11.1, build-name-setter
+  1.6.5, build-pipeline-plugin 1.5.6, build-timeout 1.18, cloudbees-folder 5.15, conditional-buildstep
+  1.3.5, config-file-provider 2.15.3, copyartifact 1.38.1, credentials 2.1.10, credentials-binding
+  1.10, dashboard-view 2.9.10, display-url-api 0.5, durable-task 1.12, email-ext 2.53,
+  embeddable-build-status 1.9, external-monitor-job 1.7, git 3.0.1, git-client 2.2.0,
+  git-parameter 0.7.1, git-server 1.7, github 1.25.0, github-api 1.82, github-branch-source
+  1.10.1, github-organization-folder 1.5, gitlab-plugin 1.4.4, gradle 1.25, handlebars
+  1.1.1, icon-shim 2.0.3, javadoc 1.4, jquery 1.11.2-0, jquery-detached 1.2.1, junit
+  1.19, ldap 1.13, mailer 1.18, matrix-auth 1.4, matrix-project 1.7.1, maven-plugin
+  2.14, mercurial 1.57, momentjs 1.1.1, msbuild 1.26, nodejs 0.2.2, pam-auth 1.3,
+  parameterized-trigger 2.32, pipeline-build-step 2.4, pipeline-graph-analysis 1.3,
+  pipeline-input-step 2.5, pipeline-milestone-step 1.3, pipeline-rest-api 2.4, pipeline-stage-step
+  2.2, pipeline-stage-view 2.4, plain-credentials 1.3, publish-over-ssh 1.14, resource-disposer
+  0.3, role-strategy 2.3.2, run-condition 1.0, scm-api 1.3, script-security 1.25,
+  ssh 2.4, ssh-credentials 1.12, ssh-slaves 1.12, structs 1.5, timestamper 1.8.7,
+  token-macro 2.0, windows-slaves 1.2, workflow-aggregator 2.4, workflow-api 2.8,
+  workflow-basic-steps 2.3, workflow-cps 2.23, workflow-cps-global-lib 2.5, workflow-durable-task-step
+  2.6, workflow-job 2.9, workflow-multibranch 2.9.2, workflow-scm-step 2.3, workflow-step-api
+  2.6, workflow-support 2.11, ws-cleanup 0.32
 kernel: Linux
 kernelmajversion: '3.10'
 kernelrelease: 3.10.0-514.2.2.el7.x86_64
 kernelversion: 3.10.0
 load_averages:
   15m: 0.05
-  1m: 0.08
+  1m: 0.01
   5m: 0.05
 macaddress: 0a:ab:d3:d6:44:6c
+macaddress_docker0: 02:42:09:21:5a:fb
+macaddress_docker_gwbridge: 02:42:0d:50:fb:22
 macaddress_eth0: 0a:ab:d3:d6:44:6c
+macaddress_veth727c913: 42:fb:72:ed:69:fb
+macaddress_vethd97f587: 82:40:fc:8c:2b:4e
 manufacturer: Xen
 memory:
   system:
-    available: 2.96 GiB
-    available_bytes: 3175481344
-    capacity: 59.97%
+    available: 1.28 GiB
+    available_bytes: 1370910720
+    capacity: 82.72%
     total: 7.39 GiB
     total_bytes: 7933206528
-    used: 4.43 GiB
-    used_bytes: 4757725184
-memoryfree: 2.96 GiB
-memoryfree_mb: 3028.375
+    used: 6.11 GiB
+    used_bytes: 6562295808
+memoryfree: 1.28 GiB
+memoryfree_mb: 1307.40234375
 memorysize: 7.39 GiB
 memorysize_mb: 7565.6953125
 mountpoints:
   "/":
-    available: 26.28 GiB
-    available_bytes: 28215296000
-    capacity: 12.37%
+    available: 25.10 GiB
+    available_bytes: 26955116544
+    capacity: 16.28%
     device: "/dev/xvda1"
     filesystem: xfs
     options:
@@ -146,8 +181,8 @@ mountpoints:
     - noquota
     size: 29.99 GiB
     size_bytes: 32198660096
-    used: 3.71 GiB
-    used_bytes: 3983364096
+    used: 4.88 GiB
+    used_bytes: 5243543552
   "/dev/shm":
     available: 3.69 GiB
     available_bytes: 3966599168
@@ -164,9 +199,9 @@ mountpoints:
     used: 4.00 KiB
     used_bytes: 4096
   "/run":
-    available: 3.67 GiB
-    available_bytes: 3941064704
-    capacity: 0.64%
+    available: 3.62 GiB
+    available_bytes: 3882098688
+    capacity: 2.13%
     device: tmpfs
     filesystem: tmpfs
     options:
@@ -177,8 +212,8 @@ mountpoints:
     - mode=755
     size: 3.69 GiB
     size_bytes: 3966603264
-    used: 24.36 MiB
-    used_bytes: 25538560
+    used: 80.59 MiB
+    used_bytes: 84504576
   "/run/user/0":
     available: 756.57 MiB
     available_bytes: 793321472
@@ -254,19 +289,91 @@ mountpoints:
     size_bytes: 3966603264
     used: 0 bytes
     used_bytes: 0
+  "/var/lib/docker/containers/7c40877203c98a1fb267e3b23c7534b57cccee208eb34946ce785dcaa3c76ae5/shm":
+    available: 64.00 MiB
+    available_bytes: 67108864
+    capacity: 0%
+    device: shm
+    filesystem: tmpfs
+    options:
+    - rw
+    - seclabel
+    - nosuid
+    - nodev
+    - noexec
+    - relatime
+    - size=65536k
+    size: 64.00 MiB
+    size_bytes: 67108864
+    used: 0 bytes
+    used_bytes: 0
+  "/var/lib/docker/devicemapper":
+    available: 25.10 GiB
+    available_bytes: 26955116544
+    capacity: 16.28%
+    device: "/dev/xvda1"
+    filesystem: xfs
+    options:
+    - rw
+    - seclabel
+    - relatime
+    - attr2
+    - inode64
+    - noquota
+    size: 29.99 GiB
+    size_bytes: 32198660096
+    used: 4.88 GiB
+    used_bytes: 5243543552
+  "/var/lib/docker/devicemapper/mnt/4f1f35f8f2639c85dab78a34002ba84699ca75e7a11c9f2fd84a2135ac28e238":
+    available: 9.89 GiB
+    available_bytes: 10619584512
+    capacity: 0.99%
+    device: "/dev/mapper/docker-202:1-58770594-4f1f35f8f2639c85dab78a34002ba84699ca75e7a11c9f2fd84a2135ac28e238"
+    filesystem: xfs
+    options:
+    - rw
+    - seclabel
+    - relatime
+    - nouuid
+    - attr2
+    - inode64
+    - logbsize=64k
+    - sunit=128
+    - swidth=128
+    - noquota
+    size: 9.99 GiB
+    size_bytes: 10725883904
+    used: 101.38 MiB
+    used_bytes: 106299392
+mtu_docker0: 1500
+mtu_docker_gwbridge: 1500
 mtu_eth0: 9001
 mtu_lo: 65536
+mtu_veth727c913: 1500
+mtu_vethd97f587: 1500
 mysql_server_id: 56193388
 netmask: 255.255.255.0
 netmask6: 'ffff:ffff:ffff:ffff::'
+netmask6_docker0: 'ffff:ffff:ffff:ffff::'
+netmask6_docker_gwbridge: 'ffff:ffff:ffff:ffff::'
 netmask6_eth0: 'ffff:ffff:ffff:ffff::'
 netmask6_lo: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+netmask6_veth727c913: 'ffff:ffff:ffff:ffff::'
+netmask6_vethd97f587: 'ffff:ffff:ffff:ffff::'
+netmask_docker0: 255.255.0.0
+netmask_docker_gwbridge: 255.255.0.0
 netmask_eth0: 255.255.255.0
 netmask_lo: 255.0.0.0
 network: 172.30.0.0
 network6: 'fe80::'
+network6_docker0: 'fe80::'
+network6_docker_gwbridge: 'fe80::'
 network6_eth0: 'fe80::'
 network6_lo: "::1"
+network6_veth727c913: 'fe80::'
+network6_vethd97f587: 'fe80::'
+network_docker0: 172.17.0.0
+network_docker_gwbridge: 172.18.0.0
 network_eth0: 172.30.0.0
 network_lo: 127.0.0.0
 networking:
@@ -275,6 +382,40 @@ networking:
   fqdn: ip-172-30-0-109.ec2.internal
   hostname: ip-172-30-0-109
   interfaces:
+    docker0:
+      bindings:
+      - address: 172.17.0.1
+        netmask: 255.255.0.0
+        network: 172.17.0.0
+      bindings6:
+      - address: fe80::42:9ff:fe21:5afb
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      ip: 172.17.0.1
+      ip6: fe80::42:9ff:fe21:5afb
+      mac: 02:42:09:21:5a:fb
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 172.17.0.0
+      network6: 'fe80::'
+    docker_gwbridge:
+      bindings:
+      - address: 172.18.0.1
+        netmask: 255.255.0.0
+        network: 172.18.0.0
+      bindings6:
+      - address: fe80::42:dff:fe50:fb22
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      ip: 172.18.0.1
+      ip6: fe80::42:dff:fe50:fb22
+      mac: 02:42:0d:50:fb:22
+      mtu: 1500
+      netmask: 255.255.0.0
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network: 172.18.0.0
+      network6: 'fe80::'
     eth0:
       bindings:
       - address: 172.30.0.109
@@ -309,6 +450,26 @@ networking:
       netmask6: ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
       network: 127.0.0.0
       network6: "::1"
+    veth727c913:
+      bindings6:
+      - address: fe80::40fb:72ff:feed:69fb
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      ip6: fe80::40fb:72ff:feed:69fb
+      mac: 42:fb:72:ed:69:fb
+      mtu: 1500
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network6: 'fe80::'
+    vethd97f587:
+      bindings6:
+      - address: fe80::8040:fcff:fe8c:2b4e
+        netmask: 'ffff:ffff:ffff:ffff::'
+        network: 'fe80::'
+      ip6: fe80::8040:fcff:fe8c:2b4e
+      mac: 82:40:fc:8c:2b:4e
+      mtu: 1500
+      netmask6: 'ffff:ffff:ffff:ffff::'
+      network6: 'fe80::'
   ip: 172.30.0.109
   ip6: fe80::8ab:d3ff:fed6:446c
   mac: 0a:ab:d3:d6:44:6c
@@ -340,6 +501,25 @@ os:
 osfamily: RedHat
 package_provider: yum
 partitions:
+  "/dev/loop0":
+    backing_file: "/var/lib/docker/devicemapper/devicemapper/data"
+    size: 100.00 GiB
+    size_bytes: 107374182400
+  "/dev/loop1":
+    backing_file: "/var/lib/docker/devicemapper/devicemapper/metadata"
+    size: 2.00 GiB
+    size_bytes: 2147483648
+  "/dev/mapper/docker-202:1-58770594-4f1f35f8f2639c85dab78a34002ba84699ca75e7a11c9f2fd84a2135ac28e238":
+    filesystem: xfs
+    mount: "/var/lib/docker/devicemapper/mnt/4f1f35f8f2639c85dab78a34002ba84699ca75e7a11c9f2fd84a2135ac28e238"
+    size: 10.00 GiB
+    size_bytes: 10737418240
+    uuid: c92831c1-0c56-4cfc-af0d-2dbbed7408b9
+  "/dev/mapper/docker-202:1-58770594-pool":
+    filesystem: xfs
+    size: 100.00 GiB
+    size_bytes: 107374182400
+    uuid: c92831c1-0c56-4cfc-af0d-2dbbed7408b9
   "/dev/xvda1":
     filesystem: xfs
     mount: "/"
@@ -415,15 +595,15 @@ sshfp_rsa: |-
 sshrsakey: AAAAB3NzaC1yc2EAAAADAQABAAABAQC//Js4uLai8dOTyfa1tsDuk0vcZkkt8WiChzzwEfNR9A+FXf9vwFxVgnk1SfdiMuPMfTnP4dwwwk6etGJuzAtrhDv4Zk9gPmILHxlvuUQ4viCG3K1FY2FZq6vBx9DtICin16c+f1BnmkXU0hI/Ou8hs5+L6fBLSlDpzuPmzr0Xxb1uQBbiwuYRz0o6nw7reEGO8P61qkPCkyEYiqipFLiI2m2XjCj7ILNUXvRO1ExKsiw+eoYI1MWvEMhEAh/YSmGQX86XFlCz3DE2OpgUST4TDQYNLI6Sme77Ic3LwDh2tvkxWwSEdYgLhpkuRvviIDxyvrkYSoKRLMetvS9HLOv9
 staging_http_get: curl
 system_uptime:
-  days: 0
-  hours: 22
-  seconds: 79423
-  uptime: 22:03 hours
+  days: 9
+  hours: 235
+  seconds: 847123
+  uptime: 9 days
 timezone: UTC
-uptime: 22:03 hours
-uptime_days: 0
-uptime_hours: 22
-uptime_seconds: 79423
+uptime: 9 days
+uptime_days: 9
+uptime_hours: 235
+uptime_seconds: 847123
 uuid: EC29411B-C4EF-7983-B9AD-CB5BBF1F53CA
 virtual: xenhvm
 clientcert: ip-172-30-0-109.ec2.internal
